@@ -7,9 +7,9 @@ export default function Footer() {
 
   const socials = [
     { Icon: Github, label: "GitHub" },
-    { Icon: Linkedin, label: "LinkedIn" },
-    { Icon: Twitter, label: "Twitter" },
-    { Icon: Instagram, label: "Instagram" },
+    { Icon: Linkedin, label: "LinkedIn", link: "https://linkedin.com/in/code-crafters-869856408" },
+    // { Icon: Twitter, label: "Twitter" },
+    // { Icon: Instagram, label: "Instagram" },
   ];
 
   const quickLinks = [
@@ -20,8 +20,8 @@ export default function Footer() {
   ];
 
   const contactInfo = [
-    { Icon: MapPin, text: "Hope College, Coimbatore" },
-    { Icon: Mail, text: "hello@codecrafters.dev" },
+    // { Icon: MapPin, text: "Hope College, Coimbatore" },
+    { Icon: Mail, text: "thecodecrafters.dev@gmail.com" },
     // { Icon: Phone, text: "+91 98765 43210" },
   ];
 
@@ -160,10 +160,12 @@ export default function Footer() {
 
             {/* Socials */}
             <div className="mt-10 flex gap-3">
-              {socials.map(({ Icon, label }, i) => (
+              {socials.map(({ Icon, label, link }, i) => (
                 <motion.a
                   key={label}
-                  href="#"
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}

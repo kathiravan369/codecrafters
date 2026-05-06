@@ -88,11 +88,11 @@ export default function Contact() {
       value: "thecodecrafters.dev@gmail.com",
       href: "mailto:thecodecrafters.dev@gmail.com",
     },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "Hope College, Coimbatore",
-    },
+    // {
+    //   icon: MapPin,
+    //   label: "Location",
+    //   value: "Hope College, Coimbatore",
+    // },
   ];
 
   return (
@@ -321,7 +321,7 @@ export default function Contact() {
 
             {/* WHATSAPP */}
             <motion.a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/917010295566"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{
@@ -342,14 +342,14 @@ export default function Contact() {
             </motion.a>
 
             {/* MAP */}
-            <div className="rounded-2xl overflow-hidden h-48 border border-white/10">
+            {/* <div className="rounded-2xl overflow-hidden h-48 border border-white/10">
               <iframe
                 title="CodeCrafters location"
                 src="https://www.google.com/maps?q=Hope+College+Coimbatore&output=embed"
                 className="w-full h-full"
                 loading="lazy"
               />
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>
